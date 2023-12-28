@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:lib="clr-namespace:LibMobile"
+    x:Class="MauiApp8.MainPage">
+
+    <ScrollView>
+        <Grid RowDefinitions="auto,auto" RowSpacing="20" ColumnDefinitions="*" BackgroundColor="Gray">
+            <Image Grid.Row="0" Grid.Column="0" Aspect="AspectFill" Source="header.jpg" Opacity="0.2" />
+
+            <Label
+                Grid.Column="0" Grid.Row="1" HorizontalOptions="Center" FontSize="Title" TextColor="Red"
+                Text="{Binding Source={x:Static lib:MaterialFontIcons.Close}}"
+                FontFamily="FontIcone" />
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
